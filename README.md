@@ -1,4 +1,4 @@
-# Digital Twin — Pump Health Monitor
+# Digital Twin- Pump Health Monitor
 
 ## Live Demo
 [Click here to view dashboard](https://digital-twin-pump-simulation.onrender.com)
@@ -9,13 +9,13 @@ This digital twin monitors pump health in real-time and detects faults
 before they cause failure.
 
 ## What is a Digital Twin?
-A virtual copy of a physical pump that runs in parallel with it.
-When sensor behavior diverges from normal — the twin detects it first.
+A virtual copy of a physical pump that runs in parallel.
+When sensor behavior diverges from normal, the twin detects it first.
 
 ## Fault Types Detected
-- Bearing Wear → vibration + temperature increase
-- Cavitation → flow drop + vibration spikes  
-- Blockage → flow drop + pressure buildup
+- Bearing Wear - vibration + temperature increase
+- Cavitation - flow drop + vibration spikes  
+- Blockage - flow drop + pressure buildup
 
 ## Approach
 - Physics-based pump simulation (pump curve, system curve)
