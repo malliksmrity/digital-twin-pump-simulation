@@ -1,0 +1,6 @@
+# Extra packages for notebooks/digital_twin.ipynb (plots and the LSTM experiments).
+-r requirements.txt
+matplotlib==3.11.2
+seaborn==0.13.2
+scipy==1.17.1
+torch==2.14.0
