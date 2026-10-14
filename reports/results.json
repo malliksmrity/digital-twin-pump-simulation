@@ -1,0 +1,58 @@
+{
+  "notebook_replication": {
+    "accuracy": 0.996,
+    "test_rows_identical_to_a_train_row": 0.466
+  },
+  "heldout_runs": {
+    "train_runs": 56,
+    "test_runs": 24,
+    "test_rows": 24000,
+    "results": [
+      {
+        "model": "Always predict healthy",
+        "accuracy": 0.775,
+        "balanced_accuracy": 0.5,
+        "recall_faulty": 0.0,
+        "false_alarm_rate": 0.0
+      },
+      {
+        "model": "Simple threshold (any sensor beyond 4 sigma)",
+        "accuracy": 0.9836,
+        "balanced_accuracy": 0.9643,
+        "recall_faulty": 0.9291,
+        "false_alarm_rate": 0.0005
+      },
+      {
+        "model": "Random forest, raw sensors",
+        "accuracy": 0.9878,
+        "balanced_accuracy": 0.9768,
+        "recall_faulty": 0.9569,
+        "false_alarm_rate": 0.0033
+      },
+      {
+        "model": "Random forest, with rolling features",
+        "accuracy": 0.9929,
+        "balanced_accuracy": 0.9844,
+        "recall_faulty": 0.9691,
+        "false_alarm_rate": 0.0002
+      }
+    ]
+  },
+  "detection_delay": {
+    "bearing_wear": {
+      "median_delay_steps": 9.5,
+      "runs_detected": 6,
+      "runs_total": 6
+    },
+    "cavitation": {
+      "median_delay_steps": 0.0,
+      "runs_detected": 6,
+      "runs_total": 6
+    },
+    "blockage": {
+      "median_delay_steps": 17.5,
+      "runs_detected": 6,
+      "runs_total": 6
+    }
+  }
+}
