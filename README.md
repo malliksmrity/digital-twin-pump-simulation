@@ -82,3 +82,9 @@ _archive/    moved files: Dash app, Render files, notebook checkpoint, original 
 
 Smrity Mallik, MSc AI and Data Science (Gisma, Berlin), B.Eng. Mechanical Engineering.
 GitHub: github.com/malliksmrity. LinkedIn: linkedin.com/in/smritymallik.
+
+## Process and automation
+
+- `PROCESS.md`: backlog, definition of done and sprint rhythm for the next work (a plan, not past experience).
+- `.github/workflows/ci.yml`: GitHub Actions check (written here, not yet run on GitHub).
+- `Dockerfile`: container for the main script (not built or tested yet).
