@@ -74,7 +74,7 @@ app.layout = html.Div(style={'backgroundColor': '#0f0f1a', 'minHeight': '100vh',
                               'fontFamily': 'Arial', 'padding': '20px'}, children=[
 
     # Title
-    html.H1("🔧 Digital Twin — Pump Health Monitor",
+    html.H1(" Digital Twin — Pump Health Monitor",
             style={'color': '#00d4ff', 'textAlign': 'center',
                    'fontSize': '28px', 'marginBottom': '5px'}),
     html.P("Real-time fault detection using LSTM + Random Forest | By Smrity Mallik",
@@ -89,10 +89,10 @@ app.layout = html.Div(style={'backgroundColor': '#0f0f1a', 'minHeight': '100vh',
             dcc.Dropdown(
                 id='fault-dropdown',
                 options=[
-                    {'label': '✅ Normal Operation', 'value': 'normal'},
-                    {'label': '⚙️ Bearing Wear',    'value': 'bearing_wear'},
-                    {'label': '💧 Cavitation',       'value': 'cavitation'},
-                    {'label': '🚧 Blockage',         'value': 'blockage'},
+                    {'label': ' Normal Operation', 'value': 'normal'},
+                    {'label': ' Bearing Wear',    'value': 'bearing_wear'},
+                    {'label': ' Cavitation',       'value': 'cavitation'},
+                    {'label': ' Blockage',         'value': 'blockage'},
                 ],
                 value='normal',
                 style={'width': '250px', 'backgroundColor': '#1a1a2e', 'color': '#000'}
@@ -164,9 +164,9 @@ def update_dashboard(fault_type, time_range):
         html.H2(f"Pump Health Score: {health_score}%",
                 style={'color': color, 'fontSize': '32px'}),
         html.P(
-            "✅ Healthy" if health_score > 80 else
-            "⚠️ Warning — Fault Developing" if health_score > 50 else
-            "🚨 Critical — Fault Detected",
+            " Healthy" if health_score > 80 else
+            " Warning — Fault Developing" if health_score > 50 else
+            " Critical — Fault Detected",
             style={'color': color, 'fontSize': '18px'}
         )
     ])
